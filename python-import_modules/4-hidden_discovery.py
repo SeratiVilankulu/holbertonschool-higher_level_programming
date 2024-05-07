@@ -3,6 +3,6 @@ if __name__ == "__main__":
     from hidden_4 import *
     allf = dir()
 
-    for i in range(0, len(allf))
+    for i in range(0, len(allf)):
         if allf[i][2] != " ":
             print("{:s}".formar(allf[i]))
