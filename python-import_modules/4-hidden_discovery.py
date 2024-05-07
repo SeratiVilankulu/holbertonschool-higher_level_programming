@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import hidden_4
-    names = dir(hidden_4)
+    from hidden_4 import *
+    allf = dir()
 
-    for i in names:
-        if (i[:2] != "__"):
-            print(i)
+    for i in range(0, len(allf))
+        if allf[i][2] != " ":
+            print("{:s}".formar(allf[i]))
