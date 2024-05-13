@@ -1,4 +1,4 @@
-This is the README file for this project 
+This is the README file for this project
 This project consists of 13 Manadatory task and 3 Advanced tasks
 
 Mandatory Tasks:
@@ -21,4 +21,4 @@ Advanced Tasks:
 
 13 - Weighted average!
 14 - Squared by using map
-15 -Delete by value
+15 -Delete by value   
