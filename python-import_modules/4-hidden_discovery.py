@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import hidden_4
-    # interaction in each word of the list
-    for i in dir(hidden_4):
-        if "__" in i:
-            continue
-        else:
-            print(i)
+    import hidden_4 import *
+    allf = dir ()
+    for i in range(0, len(allf)):
+        if allf[i][:2] != "__":
+            print("{:s}".format(allf[i]))
