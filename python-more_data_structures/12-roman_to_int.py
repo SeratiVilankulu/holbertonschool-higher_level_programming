@@ -1,16 +1,33 @@
 #!/usr/bin/python3
-def roman_to_int(roman_string: str):
-    if roman_string is None or type(roman_string) != str:
-        return 0
-    data = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    numbers = [data[x] for x in roman_string] + [0]
-    rep = 0
-
-    for i in range(len(numbers) - 1):
-        if numbers[i] >= numbers[i+1]:
-            rep += numbers[i]
-        else:
-        rep -= numbers[i]
-
-    return rep
-
+def roman_to_int(roman_string):
+    value = 0
+    if not (isinstance(roman_string, str)):
+        return (0)
+    for i in range(len(roman_string)):
+        if (roman_string[i] == 'I'):
+            value += 1
+        if (roman_string[i] == 'V'):
+            if (roman_string[i - 1] == 'I' and i != 0):
+                value -= 2
+            value += 5
+        if (roman_string[i] == 'X'):
+            if (roman_string[i - 1] == 'I' and i != 0):
+                value -= 2
+            value += 10
+        if (roman_string[i] == 'L'):
+            if (roman_string[i - 1] == 'X' and i != 0):
+                value -= 20
+            value += 50
+        if (roman_string[i] == 'C'):
+            if (roman_string[i - 1] == 'X' and i != 0):
+                value -= 20
+            value += 100
+        if (roman_string[i] == 'D'):
+            if (roman_string[i - 1] == 'C' and i != 0):
+                value -= 200
+            value += 500
+        if (roman_string[i] == 'M'):
+            if (roman_string[i - 1] == 'C' and i != 0):
+                value -= 200
+            value += 1000
+    return (value)
