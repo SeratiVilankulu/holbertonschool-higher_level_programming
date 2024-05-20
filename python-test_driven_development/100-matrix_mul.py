@@ -3,7 +3,7 @@
 
 
 def matrix_mul(m_a, m_b):
-    """Function that performs matrix multiplication on two two-dimensional lists
+    """Function that performs matrix multiplication on two two-dimensional list
     of integers/floats. Error checking and input filtration could be done more
     compactly, but assignment requested a specific order of checks.
 
