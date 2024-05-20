@@ -60,4 +60,3 @@ if __name__ == '__main__':
     square_y = []
     pos_x = 0
     solve_NQueen(N, pos_x, square_y)
-
