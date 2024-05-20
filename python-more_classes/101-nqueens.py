@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def print_NQueen(square_y, N):
+  def print_NQueen(square_y, N):
     """Create a the format and print the result
     result = possible variant of the queen position
     in the chess game"""
@@ -16,7 +16,7 @@ def print_NQueen(square_y, N):
     print(result)
 
 
-def check_move(pos_x, square_y):
+  def check_move(pos_x, square_y):
     """Check if the square it is available to move or not
         we check the position between one queen and the
         posible position of the new queen"""
@@ -28,7 +28,7 @@ def check_move(pos_x, square_y):
     return True
 
 
-def solve_NQueen(N, pos_x, square_y):
+  def solve_NQueen(N, pos_x, square_y):
     """Backtracking function:
     - N: Size of chessboard
     - pos_x: actual position
