@@ -14,4 +14,3 @@ def save_to_json_file(my_obj, filename):
         print("[{}] {}".format(e.__class__.__name__, e))
     except PermissionError as e:
         print("[{}] {}".format(e.__class__.__name__, e))
-
