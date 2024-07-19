@@ -1,20 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items List</title>
+    <title>Home - My Flask App</title>
 </head>
 <body>
-    <h1>Items List</h1>
-    {% if items %}
+    {% include 'header.html' %}
+    <main>
+        <h1>Welcome to My Flask App</h1>
+        <p>This is a simple Flask application.</p>
         <ul>
-            {% for item in items %}
-                <li>{{ item }}</li>
-            {% endfor %}
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>Templates</li>
         </ul>
-    {% else %}
-        <p>No items found</p>
-    {% endif %}
+    </main>
+    {% include 'footer.html' %}
 </body>
 </html>
+
